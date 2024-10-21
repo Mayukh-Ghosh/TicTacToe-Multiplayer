@@ -1,6 +1,6 @@
 // script.js
 
-const socket = io();
+const socket = io(tic-tac-toe-multiplayer-sepia.vercel.app);
 
 let currentPlayer = ''; // Either 'X' or 'O', assigned by the server
 let myTurn = false; // Players should take turns
