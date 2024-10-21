@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Default: Dark Theme */
+:root {
+    --bg-color: #1E1E1E;
+    --text-color: #FFFFFF;
+    --line-color: #CCCCCC;
+    --player-x-color: #FF6B6B;
+    --player-o-color: #4ECDC4;
+    --hover-color: #FFD93D;
+    --inactive-tile-color: #2E2E2E;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .tile {
+    width: 100px;
+    height: 100px;
+    background-color: var(--inactive-tile-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--line-color);
+  }
+  
+  .tile:hover {
+    background-color: var(--hover-color);
+  }
+  
+  /* Light Mode */
+  body.light-mode {
+    --bg-color: #F9F9F9;
+    --text-color: #333333;
+    --line-color: #333333;
+    --player-x-color: #FF6B6B;
+    --player-o-color: #4ECDC4;
+    --hover-color: #FFD93D;
+    --inactive-tile-color: #EFEFEF;
+  }
+  
+  body.light-mode {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
