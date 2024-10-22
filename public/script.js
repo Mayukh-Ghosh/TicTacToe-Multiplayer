@@ -1,4 +1,4 @@
-const socket = io('https://tic-tac-toe-multiplayer-sepia.vercel.app');
+const socket = io();
 
 let currentPlayer = ''; // Either 'X' or 'O', assigned by the server
 let myTurn = false; // Players should take turns
